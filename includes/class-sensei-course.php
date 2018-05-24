@@ -2978,7 +2978,7 @@ class Sensei_Course {
 
         global $post;
 
-	    if ( ! is_singular( 'course' )  ) {
+	    if ( 'course' !== $post->post_type ) {
 		    return;
 	    }
 
